@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarOfBlackMoon", "WarOfBlackMoon\WarOfBlackMoon.csproj", "{786570AB-A933-46A2-97F2-512B91346849}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleFields", "BattleFields\BattleFields.csproj", "{A475AE4A-6127-4B66-83C1-B1341CDAB77F}"
@@ -8,6 +10,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abattoir", "Abattoir\Abattoir.csproj", "{CB17DD27-4E52-479B-BAFB-8B4027BB16A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBaseLib", "CommonBaseLib\CommonBaseLib.csproj", "{3A06E712-927A-4B01-93A9-16DC64CA64C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{FF6EBB47-C6FD-4F08-9411-F45F995F06C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BE28B142-6436-42E7-8446-272F20EBF868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Communication", "Communication", "{D36652D0-9BFA-414D-99CE-97D1147C4DE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{A98C4DA0-C5A2-4E53-ADF2-522AFE9DC6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BsonCFServicer", "BsonCFServicer\BsonCFServicer.csproj", "{128E839B-FAD7-4656-8809-0B2FDD171738}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ref", "Ref", "{52C9647A-B4AF-468E-9E9D-A5EF02CC95FC}"
+	ProjectSection(SolutionItems) = preProject
+		Ref\MongoDB.Bson.dll = Ref\MongoDB.Bson.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,8 +76,28 @@ Global
 		{3A06E712-927A-4B01-93A9-16DC64CA64C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3A06E712-927A-4B01-93A9-16DC64CA64C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3A06E712-927A-4B01-93A9-16DC64CA64C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Debug|x86.Build.0 = Debug|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|x86.ActiveCfg = Release|Any CPU
+		{128E839B-FAD7-4656-8809-0B2FDD171738}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{786570AB-A933-46A2-97F2-512B91346849} = {FF6EBB47-C6FD-4F08-9411-F45F995F06C9}
+		{A475AE4A-6127-4B66-83C1-B1341CDAB77F} = {FF6EBB47-C6FD-4F08-9411-F45F995F06C9}
+		{CB17DD27-4E52-479B-BAFB-8B4027BB16A6} = {FF6EBB47-C6FD-4F08-9411-F45F995F06C9}
+		{3A06E712-927A-4B01-93A9-16DC64CA64C6} = {BE28B142-6436-42E7-8446-272F20EBF868}
+		{A98C4DA0-C5A2-4E53-ADF2-522AFE9DC6AA} = {D36652D0-9BFA-414D-99CE-97D1147C4DE1}
+		{128E839B-FAD7-4656-8809-0B2FDD171738} = {A98C4DA0-C5A2-4E53-ADF2-522AFE9DC6AA}
 	EndGlobalSection
 EndGlobal
